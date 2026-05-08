@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Mental Health</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="perfil">
+      <div class="avatar"></div>
+      <div class="saudacao">
+        <span class="nome">Olá, <strong id="nomeUsuario">Fulana</strong></span>
+        <span class="subtitulo">Como está seu dia?</span>
+      </div>
+    </div>
+    <div class="sino">🔔</div>
+  </div>
+
+  <div class="calendario">
+    <div class="dia" id="cal-seg"><span class="label-dia">SEG</span><span class="numero">16</span></div>
+    <div class="dia" id="cal-ter"><span class="label-dia">TER</span><span class="numero">17</span></div>
+    <div class="dia" id="cal-qua"><span class="label-dia">QUA</span><span class="numero">18</span></div>
+    <div class="dia" id="cal-qui"><span class="label-dia">QUI</span><span class="numero">19</span></div>
+    <div class="dia" id="cal-sex"><span class="label-dia">SEX</span><span class="numero">20</span></div>
+    <div class="dia" id="cal-sab"><span class="label-dia">SÁB</span><span class="numero">21</span></div>
+    <div class="dia" id="cal-dom"><span class="label-dia">DOM</span><span class="numero">22</span></div>
+  </div>
+
+  <div class="cards">
+
+    <a href="../telaChecagem/index.html" class="card card-azul">
+      <div class="card-icon">🙂</div>
+      <div class="card-texto">
+        <strong>Checagem de humor</strong>
+        <span>Nos diga como está se sentindo hoje</span>
+      </div>
+      <div class="seta">›</div>
+    </a>
+
+    <a href="../telaPerguntas/index.html" class="card card-rosa">
+      <div class="card-icon">📊</div>
+      <div class="card-texto">
+        <strong>Perguntas do dia</strong>
+        <span>Tire um tempinho para responder as perguntas de hoje</span>
+      </div>
+      <div class="seta">›</div>
+    </a>
+
+    <a href="../telaSenha/index.html" class="card card-laranja">
+      <div class="card-icon">📈</div>
+      <div class="card-texto">
+        <strong>Mapa de humor</strong>
+        <span>Visualize seus registros</span>
+      </div>
+      <div class="seta">›</div>
+    </a>
+
+  </div>
+
+  <div class="caixa-mensagem">
+    <p id="mensagem-dia"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

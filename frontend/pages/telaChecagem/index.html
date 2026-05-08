@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checagem de Humor - Mental Health</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="topo">
+      <a href="../telaHome/index.html" class="btn-voltar">‹</a>
+    </div>
+
+    <h1>Olá!</h1>
+    <p class="subtitulo">Como você está se sentindo hoje?</p>
+
+    <div class="opcoes">
+      <button class="opcao opcao-muito-bem" onclick="selecionar(this, 'Muito bem')">Muito bem</button>
+      <button class="opcao opcao-bem" onclick="selecionar(this, 'Bem')">Bem</button>
+      <button class="opcao opcao-neutro" onclick="selecionar(this, 'Neutro')">Neutro</button>
+      <button class="opcao opcao-mal" onclick="selecionar(this, 'Mal')">Mal</button>
+      <button class="opcao opcao-muito-mal" onclick="selecionar(this, 'Muito mal')">Muito mal</button>
+      <button class="opcao opcao-ajuda" onclick="selecionar(this, 'Preciso de ajuda')"><strong>Preciso de ajuda!</strong></button>
+    </div>
+
+  </div>
+
+  <!-- PAINEL CVV -->
+  <div id="notif-ajuda" class="notif-ajuda">
+    <p>💜 Se você precisa de ajuda, ligue para o CVV:</p>
+    <p class="cvv-numero"><strong>188</strong></p>
+    <p class="cvv-sub">Disponível 24h, todos os dias. Gratuito.</p>
+    <button onclick="fecharNotif()">Fechar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

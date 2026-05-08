@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.topo {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(180deg, #9fbad6 0%);
+}
+
+.topo h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #6C5B7B;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 35px;
+  gap: 50px;
+  background: linear-gradient(180deg, #9bb5d1 0%, #f7c5c5 40%, #f9d895 60%);
+}
+
+.texto {
+  max-width: 500px;
+}
+
+#texto-digitando {
+  white-space: pre-line;
+  font-size: 16px;
+  color: #6C5B7B;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #FFD700;
+  color: #6C5B7B;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.btn:hover {
+  background-color: #ffbb00;
+}
+
+.btn.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.imagem img {
+  width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 30px;
+}
+
+.imagem img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.rodape {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(180deg, #ffd786fb 100%);
+  color: #6C5B7B;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.rodape p { margin: 0; }
+.rodape strong { color: red; }

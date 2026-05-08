@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatório Diário - Mental Health</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <a href="../telaHome/index.html" class="btn-voltar">‹</a>
+  <h1>Relatório Diário</h1>
+</div>
+
+<div class="conteudo">
+
+  <div class="pergunta">
+    <p>1. Como foi a qualidade do seu sono essa noite?</p>
+    <div class="escala" data-pergunta="sono">
+      <span class="opcao">1</span>
+      <span class="opcao">2</span>
+      <span class="opcao">3</span>
+      <span class="opcao">4</span>
+      <span class="opcao">5</span>
+    </div>
+    <div class="legenda"><small>Bom</small><small>Ruim</small></div>
+  </div>
+
+  <hr>
+
+  <div class="pergunta">
+    <p>2. Você tomou sua medicação conforme a prescrição hoje?</p>
+    <div class="botoes" data-pergunta="medicacao">
+      <button class="opcao">✖ Não</button>
+      <button class="opcao">✔ Sim</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="pergunta">
+    <p>3. Sentiu-se disposto para realizar suas tarefas hoje?</p>
+    <div class="escala" data-pergunta="disposicao">
+      <span class="opcao">1</span>
+      <span class="opcao">2</span>
+      <span class="opcao">3</span>
+      <span class="opcao">4</span>
+      <span class="opcao">5</span>
+    </div>
+    <div class="legenda"><small>Bom</small><small>Ruim</small></div>
+  </div>
+
+  <hr>
+
+  <div class="pergunta">
+    <p>4. Sentiu algum aperto no peito ou preocupação excessiva?</p>
+    <div class="botoes" data-pergunta="ansiedade">
+      <button class="opcao">✖ Não</button>
+      <button class="opcao">✔ Sim</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="pergunta">
+    <p>5. Aconteceu algo fora do comum que afetou seu humor?</p>
+    <input type="text" id="campoTexto" placeholder="Conte-nos um pouco sobre o que aconteceu...">
+  </div>
+
+  <button class="btn-enviar" id="btnEnviar">Enviar Relatório</button>
+
+</div>
+
+<div id="notificacao" class="notificacao">✔ Resposta enviada!</div>
+
+<script src="script.js"></script>
+</body>
+</html>

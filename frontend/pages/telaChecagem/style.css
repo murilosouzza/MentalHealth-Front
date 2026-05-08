@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #9bb5d1 0%, #f7c5c5 50%, #f9d895 100%);
+}
+
+.container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 50px 25px 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.topo { margin-bottom: 30px; }
+
+.btn-voltar {
+  font-size: 32px;
+  color: #4b3f5c;
+  text-decoration: none;
+  font-weight: 300;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.btn-voltar:hover { opacity: 1; }
+
+h1 {
+  font-size: 38px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  font-size: 16px;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 35px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.opcao {
+  width: 100%;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 20px;
+  font-size: 17px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.15s, opacity 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.opcao:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.opcao.selecionado {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  outline: 3px solid rgba(255,255,255,0.7);
+}
+
+.opcao-muito-bem  { background: rgba(130, 210, 180, 0.85); }
+.opcao-bem        { background: rgba(165, 225, 200, 0.75); }
+.opcao-neutro     { background: rgba(240, 185, 155, 0.75); }
+.opcao-mal        { background: rgba(235, 130, 100, 0.80); }
+.opcao-muito-mal  { background: rgba(200, 80, 120, 0.80); }
+.opcao-ajuda      { background: rgba(130, 140, 200, 0.80); text-align: center; }
+
+/* PAINEL CVV */
+.notif-ajuda {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: rgba(75, 63, 92, 0.97);
+  backdrop-filter: blur(12px);
+  padding: 30px 25px;
+  text-align: center;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0 -4px 30px rgba(0,0,0,0.3);
+  animation: slideUp 0.3s ease;
+  z-index: 100;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+.notif-ajuda p { color: #fff; font-size: 15px; margin-bottom: 8px; }
+.cvv-numero { font-size: 48px !important; color: #f9d895 !important; font-weight: 900; margin: 5px 0 !important; }
+.cvv-sub { font-size: 13px !important; opacity: 0.8; margin-bottom: 20px !important; }
+
+.notif-ajuda button {
+  padding: 12px 40px;
+  border-radius: 25px;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.notif-ajuda button:hover { background: rgba(255,255,255,0.3); }
